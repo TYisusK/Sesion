@@ -1,0 +1,19 @@
+<%- include("templates/encabezado.ejs") %>
+<%- include("templates/menu.ejs") %>
+<H1>Modificar Usuario</H1>
+<form action="/modificarUsuario" method="post" id="formulario">
+    <input type="hidden" name="id" value="<%= usuario.id %>">
+    <div>
+        <input type="text" name="usuario" placeholder="Usuario" value="<%= usuario.usuario %>">
+    </div>
+    <div>
+        <input type="text" name="nombre" placeholder="Nombre" value="<%= usuario.nombre %>">
+    </div>
+    <div>
+        <input type="password" name="password" placeholder="Password" value="<%= usuario.password %>">
+    </div>
+    <div>
+        <button type="submit">Guardar cambios</button>
+    </div>
+</form>
+<%- include("templates/pie.ejs") %>

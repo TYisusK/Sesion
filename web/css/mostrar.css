@@ -1,0 +1,49 @@
+/* Estilos para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  thead th,
+  tbody td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  /* Estilos para las filas impares (alternar colores) */
+  tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Estilos para los enlaces de edición y borrado lógico */
+  a {
+    text-decoration: none;
+    color: blue;
+    margin-right: 10px;
+  }
+  
+  /* Estilos para el encabezado y los títulos */
+  h1 {
+    margin-top: 20px;
+  }
+  
+  /* Estilos para la tabla si no hay datos para mostrar */
+  tbody td[colspan] {
+    text-align: center;
+    padding: 20px;
+    color: red;
+  }
+  
+  /* Estilos generales para el cuerpo de la página */
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  /* Estilos para el enlace activo en el menú (opcional, si tienes un menú) */
+  .menu a[href="/mostrar"] {
+    font-weight: bold;
+  }
+  
