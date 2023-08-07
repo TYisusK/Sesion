@@ -6,6 +6,7 @@ require("dotenv").config();
 
 var app=express();
 app.set("view engine", "ejs");
+app.set('views', __dirname + '/views');
 app.set("/web", express.static(path.join(__dirname, "web")));
 app.use(express.urlencoded({extended:true}));
 app.use(session({
